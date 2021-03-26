@@ -1,0 +1,1 @@
+vhdtdtfi -prj vhdl-assignment-2 -o /home/ise/VHDL/vhdl-assignment-2/UART_baudRateGenerator.vhi -module UART_baudRateGenerator -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work UART_baudRateGenerator.vhd 

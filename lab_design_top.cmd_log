@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "/home/ise/VHDL/vhdl-assignment-2/lab_design_top.xst" -ofn "/home/ise/VHDL/vhdl-assignment-2/lab_design_top.syr" 

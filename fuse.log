@@ -1,0 +1,36 @@
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib secureip -o /home/ise/VHDL/vhdl-assignment-2/lab2_test_bench_isim_beh.exe -prj /home/ise/VHDL/vhdl-assignment-2/lab2_test_bench_beh.prj work.lab2_test_bench 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 1
+Turning on mult-threading, number of parallel sub-compilation jobs: 0 
+Determining compilation order of HDL files
+Parsing VHDL file "/home/ise/VHDL/vhdl-assignment-2/UART_transmitter.vhd" into library work
+Parsing VHDL file "/home/ise/VHDL/vhdl-assignment-2/UART_receiver.vhd" into library work
+Parsing VHDL file "/home/ise/VHDL/vhdl-assignment-2/UART_baudRateGenerator.vhd" into library work
+Parsing VHDL file "/home/ise/VHDL/vhdl-assignment-2/UART.vhd" into library work
+Parsing VHDL file "/home/ise/VHDL/vhdl-assignment-2/debouncer.vhd" into library work
+Parsing VHDL file "/home/ise/VHDL/vhdl-assignment-2/character_encoder.vhd" into library work
+Parsing VHDL file "/home/ise/VHDL/vhdl-assignment-2/character_decoder.vhd" into library work
+Parsing VHDL file "/home/ise/VHDL/vhdl-assignment-2/lab_design_top.vhd" into library work
+Parsing VHDL file "/home/ise/VHDL/vhdl-assignment-2/lab2_test_bench.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 97164 KB
+Fuse CPU Usage: 510 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling architecture behavioral of entity UART_baudRateGenerator [\UART_baudRateGenerator(57600,66...]
+Compiling architecture behavioral of entity UART_transmitter [uart_transmitter_default]
+Compiling architecture behavioral of entity UART_receiver [uart_receiver_default]
+Compiling architecture behavioral of entity UART [\UART(57600,66666667)\]
+Compiling architecture behavioral of entity character_decoder [\character_decoder(66666667)\]
+Compiling architecture behavioral of entity character_encoder [character_encoder_default]
+Compiling architecture behavioral of entity debouncer [\debouncer(100)\]
+Compiling architecture structural of entity lab2_design_top [lab2_design_top_default]
+Compiling architecture behavior of entity lab2_test_bench
+Time Resolution for simulation is 1ps.
+Compiled 20 VHDL Units
+Built simulation executable /home/ise/VHDL/vhdl-assignment-2/lab2_test_bench_isim_beh.exe
+Fuse Memory Usage: 112028 KB
+Fuse CPU Usage: 610 ms
+GCC CPU Usage: 320 ms
