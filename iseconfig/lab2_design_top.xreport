@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2021-03-26T13:01:22</DateModified>
+  <DateModified>2021-04-05T09:49:43</DateModified>
   <ModuleName>lab2_design_top</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>/home/ise/VHDL/vhdl-assignment-2/iseconfig/lab2_design_top.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/home/ise/VHDL/vhdl-assignment-2/</ImplementationReportsDirectory>
+  <SavedFilePath>/config/VHDL/vhdl-assignment-2/iseconfig/lab2_design_top.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>/config/VHDL/vhdl-assignment-2/</ImplementationReportsDirectory>
   <DateInitialized>2021-03-26T10:50:05</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

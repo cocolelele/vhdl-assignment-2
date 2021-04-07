@@ -108,28 +108,28 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "/home/ise/VHDL/vhdl-assignment-2/UART_transmitter.vhd" into library work
+Parsing VHDL file "/config/VHDL/vhdl-assignment-2/UART_transmitter.vhd" into library work
 Parsing entity <UART_transmitter>.
 Parsing architecture <Behavioral> of entity <uart_transmitter>.
-Parsing VHDL file "/home/ise/VHDL/vhdl-assignment-2/UART_receiver.vhd" into library work
+Parsing VHDL file "/config/VHDL/vhdl-assignment-2/UART_receiver.vhd" into library work
 Parsing entity <UART_receiver>.
 Parsing architecture <Behavioral> of entity <uart_receiver>.
-Parsing VHDL file "/home/ise/VHDL/vhdl-assignment-2/UART_baudRateGenerator.vhd" into library work
+Parsing VHDL file "/config/VHDL/vhdl-assignment-2/UART_baudRateGenerator.vhd" into library work
 Parsing entity <UART_baudRateGenerator>.
 Parsing architecture <BEHAVIORAL> of entity <uart_baudrategenerator>.
-Parsing VHDL file "/home/ise/VHDL/vhdl-assignment-2/UART.vhd" into library work
+Parsing VHDL file "/config/VHDL/vhdl-assignment-2/UART.vhd" into library work
 Parsing entity <UART>.
 Parsing architecture <Behavioral> of entity <uart>.
-Parsing VHDL file "/home/ise/VHDL/vhdl-assignment-2/debouncer.vhd" into library work
+Parsing VHDL file "/config/VHDL/vhdl-assignment-2/debouncer.vhd" into library work
 Parsing entity <debouncer>.
 Parsing architecture <Behavioral> of entity <debouncer>.
-Parsing VHDL file "/home/ise/VHDL/vhdl-assignment-2/character_encoder.vhd" into library work
+Parsing VHDL file "/config/VHDL/vhdl-assignment-2/character_encoder.vhd" into library work
 Parsing entity <character_encoder>.
 Parsing architecture <Behavioral> of entity <character_encoder>.
-Parsing VHDL file "/home/ise/VHDL/vhdl-assignment-2/character_decoder.vhd" into library work
+Parsing VHDL file "/config/VHDL/vhdl-assignment-2/character_decoder.vhd" into library work
 Parsing entity <character_decoder>.
 Parsing architecture <Behavioral> of entity <character_decoder>.
-Parsing VHDL file "/home/ise/VHDL/vhdl-assignment-2/lab_design_top.vhd" into library work
+Parsing VHDL file "/config/VHDL/vhdl-assignment-2/lab_design_top.vhd" into library work
 Parsing entity <lab2_design_top>.
 Parsing architecture <structural> of entity <lab2_design_top>.
 
@@ -150,7 +150,7 @@ Elaborating entity <UART_receiver> (architecture <Behavioral>) from library <wor
 Elaborating entity <character_decoder> (architecture <Behavioral>) with generics from library <work>.
 
 Elaborating entity <character_encoder> (architecture <Behavioral>) from library <work>.
-INFO:HDLCompiler:679 - "/home/ise/VHDL/vhdl-assignment-2/character_encoder.vhd" Line 44. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "/config/VHDL/vhdl-assignment-2/character_encoder.vhd" Line 44. Case statement is complete. others clause is never selected
 
 Elaborating entity <debouncer> (architecture <Behavioral>) with generics from library <work>.
 
@@ -159,38 +159,37 @@ Elaborating entity <debouncer> (architecture <Behavioral>) with generics from li
 =========================================================================
 
 Synthesizing Unit <lab2_design_top>.
-    Related source file is "/home/ise/VHDL/vhdl-assignment-2/lab_design_top.vhd".
+    Related source file is "/config/VHDL/vhdl-assignment-2/lab_design_top.vhd".
     Summary:
 	no macro.
 Unit <lab2_design_top> synthesized.
 
 Synthesizing Unit <UART>.
-    Related source file is "/home/ise/VHDL/vhdl-assignment-2/UART.vhd".
-        BAUD_RATE = 9600
-        CLOCK_RATE = 40000000
-INFO:Xst:3210 - "/home/ise/VHDL/vhdl-assignment-2/UART.vhd" line 57: Output port <baudRateEnable_x16> of the instance <rateGen> is unconnected or connected to loadless signal.
+    Related source file is "/config/VHDL/vhdl-assignment-2/UART.vhd".
+        BAUD_RATE = 57600
+        CLOCK_RATE = 66666667
     Summary:
 	no macro.
 Unit <UART> synthesized.
 
 Synthesizing Unit <UART_baudRateGenerator>.
-    Related source file is "/home/ise/VHDL/vhdl-assignment-2/UART_baudRateGenerator.vhd".
-        BAUD_RATE = 9600
-        CLOCK_RATE = 40000000
+    Related source file is "/config/VHDL/vhdl-assignment-2/UART_baudRateGenerator.vhd".
+        BAUD_RATE = 57600
+        CLOCK_RATE = 66666667
 WARNING:Xst:647 - Input <reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Found 9-bit register for signal <make_x16en.clockCount>.
+    Found 7-bit register for signal <make_x16en.clockCount>.
     Found 1-bit register for signal <baudRateEnable>.
-    Found 13-bit register for signal <make_baudEn.clockCount>.
+    Found 11-bit register for signal <make_baudEn.clockCount>.
     Found 1-bit register for signal <baudRateEnable_x16>.
-    Found 9-bit adder for signal <make_x16en.clockCount[8]_GND_5_o_add_0_OUT> created at line 22.
-    Found 13-bit adder for signal <make_baudEn.clockCount[12]_GND_5_o_add_4_OUT> created at line 35.
+    Found 7-bit adder for signal <make_x16en.clockCount[6]_GND_5_o_add_0_OUT> created at line 22.
+    Found 11-bit adder for signal <make_baudEn.clockCount[10]_GND_5_o_add_4_OUT> created at line 35.
     Summary:
 	inferred   2 Adder/Subtractor(s).
-	inferred  24 D-type flip-flop(s).
+	inferred  20 D-type flip-flop(s).
 Unit <UART_baudRateGenerator> synthesized.
 
 Synthesizing Unit <UART_transmitter>.
-    Related source file is "/home/ise/VHDL/vhdl-assignment-2/UART_transmitter.vhd".
+    Related source file is "/config/VHDL/vhdl-assignment-2/UART_transmitter.vhd".
     Found 1-bit register for signal <ready>.
     Found 1-bit register for signal <tx_sm.go>.
     Found 1-bit register for signal <serialDataOut>.
@@ -221,7 +220,7 @@ Synthesizing Unit <UART_transmitter>.
 Unit <UART_transmitter> synthesized.
 
 Synthesizing Unit <UART_receiver>.
-    Related source file is "/home/ise/VHDL/vhdl-assignment-2/UART_receiver.vhd".
+    Related source file is "/config/VHDL/vhdl-assignment-2/UART_receiver.vhd".
     Found 1-bit register for signal <dataValid>.
     Found 1-bit register for signal <countLoad>.
     Found 1-bit register for signal <countEnable>.
@@ -257,8 +256,8 @@ Synthesizing Unit <UART_receiver>.
 Unit <UART_receiver> synthesized.
 
 Synthesizing Unit <character_decoder>.
-    Related source file is "/home/ise/VHDL/vhdl-assignment-2/character_decoder.vhd".
-        CLOCK_FREQUENCY = 40000000
+    Related source file is "/config/VHDL/vhdl-assignment-2/character_decoder.vhd".
+        CLOCK_FREQUENCY = 66666667
     Register <illuminate> equivalent to <mk_timer.timer_running> has been removed
     Register <send_character_i> equivalent to <start_timer> has been removed
     Found 8-bit register for signal <character_to_send>.
@@ -286,7 +285,7 @@ Synthesizing Unit <character_decoder>.
 Unit <character_decoder> synthesized.
 
 Synthesizing Unit <character_encoder>.
-    Related source file is "/home/ise/VHDL/vhdl-assignment-2/character_encoder.vhd".
+    Related source file is "/config/VHDL/vhdl-assignment-2/character_encoder.vhd".
     Found 8-bit register for signal <DIP_value>.
     Found 4-bit register for signal <do_DIP.DIP_last_value>.
     Found 8-bit register for signal <do_select.decoder_buffer>.
@@ -306,12 +305,12 @@ Synthesizing Unit <character_encoder>.
 Unit <character_encoder> synthesized.
 
 Synthesizing Unit <debouncer>.
-    Related source file is "/home/ise/VHDL/vhdl-assignment-2/debouncer.vhd".
-        DELAY_VALUE = 4000000
+    Related source file is "/config/VHDL/vhdl-assignment-2/debouncer.vhd".
+        DELAY_VALUE = 100
     Found 2-bit register for signal <dbnceSM.state>.
     Found 1-bit register for signal <countReset>.
     Found 1-bit register for signal <dbnceSM.lastInput>.
-    Found 22-bit register for signal <cntr.internalCount>.
+    Found 7-bit register for signal <cntr.internalCount>.
     Found 1-bit register for signal <countDone>.
     Found 1-bit register for signal <signal_out>.
 INFO:Xst:1799 - State changing is never reached in FSM <dbnceSM.state>.
@@ -326,10 +325,10 @@ INFO:Xst:1799 - State changing is never reached in FSM <dbnceSM.state>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 22-bit subtractor for signal <GND_11_o_GND_11_o_sub_9_OUT<21:0>> created at line 70.
+    Found 7-bit subtractor for signal <GND_11_o_GND_11_o_sub_9_OUT<6:0>> created at line 70.
     Summary:
 	inferred   1 Adder/Subtractor(s).
-	inferred  26 D-type flip-flop(s).
+	inferred  11 D-type flip-flop(s).
 	inferred   4 Multiplexer(s).
 	inferred   1 Finite State Machine(s).
 Unit <debouncer> synthesized.
@@ -341,23 +340,22 @@ Macro Statistics
 # RAMs                                                 : 1
  16x8-bit single-port Read Only RAM                    : 1
 # Adders/Subtractors                                   : 11
- 13-bit adder                                          : 1
- 22-bit subtractor                                     : 4
+ 11-bit adder                                          : 1
  26-bit adder                                          : 1
  3-bit adder                                           : 2
  5-bit subtractor                                      : 1
+ 7-bit adder                                           : 1
+ 7-bit subtractor                                      : 4
  8-bit addsub                                          : 1
- 9-bit adder                                           : 1
 # Registers                                            : 55
  1-bit register                                        : 36
- 13-bit register                                       : 1
- 22-bit register                                       : 4
+ 11-bit register                                       : 1
  26-bit register                                       : 1
  3-bit register                                        : 2
  4-bit register                                        : 1
  5-bit register                                        : 2
+ 7-bit register                                        : 5
  8-bit register                                        : 7
- 9-bit register                                        : 1
 # Comparators                                          : 7
  4-bit comparator equal                                : 1
  8-bit comparator lessequal                            : 6
@@ -365,10 +363,10 @@ Macro Statistics
  1-bit 2-to-1 multiplexer                              : 36
  1-bit 4-to-1 multiplexer                              : 1
  1-bit 8-to-1 multiplexer                              : 1
- 22-bit 2-to-1 multiplexer                             : 4
  26-bit 2-to-1 multiplexer                             : 2
  3-bit 2-to-1 multiplexer                              : 2
  5-bit 2-to-1 multiplexer                              : 1
+ 7-bit 2-to-1 multiplexer                              : 4
  8-bit 2-to-1 multiplexer                              : 6
 # FSMs                                                 : 6
 # Xors                                                 : 4
@@ -382,8 +380,8 @@ INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmet
 =========================================================================
 
 WARNING:Xst - The specified part-type was not generated at build time. XST is loading the full part-type and will therefore consume more CPU and memory.
-Loading device for application Rf_Device from file '7a100t.nph' in environment /opt/Xilinx/14.7/ISE_DS/ISE/.
-Loading device for application Rf_Device from file '7a100t.nph' in environment /opt/Xilinx/14.7/ISE_DS/ISE/.
+Loading device for application Rf_Device from file '7a100t.nph' in environment /opt/14.7/ISE_DS/ISE/.
+Loading device for application Rf_Device from file '7a100t.nph' in environment /opt/14.7/ISE_DS/ISE/.
 WARNING:Xst:1293 - FF/Latch <countValue_4> has a constant value of 0 in block <rcvr>. This FF/Latch will be trimmed during the optimization process.
 
 Synthesizing (advanced) Unit <UART_baudRateGenerator>.
@@ -425,16 +423,16 @@ Macro Statistics
 # RAMs                                                 : 1
  16x8-bit single-port distributed Read Only RAM        : 1
 # Adders/Subtractors                                   : 4
- 13-bit adder                                          : 1
+ 11-bit adder                                          : 1
  26-bit adder                                          : 1
+ 7-bit adder                                           : 1
  8-bit addsub                                          : 1
- 9-bit adder                                           : 1
 # Counters                                             : 9
- 13-bit up counter                                     : 1
- 22-bit down counter                                   : 4
+ 11-bit up counter                                     : 1
  3-bit up counter                                      : 2
  5-bit down counter                                    : 1
- 9-bit up counter                                      : 1
+ 7-bit down counter                                    : 4
+ 7-bit up counter                                      : 1
 # Registers                                            : 127
  Flip-Flops                                            : 127
 # Comparators                                          : 7
@@ -515,22 +513,12 @@ Optimizing unit <character_decoder> ...
 Optimizing unit <character_encoder> ...
 
 Optimizing unit <debouncer> ...
-WARNING:Xst:2677 - Node <make_UART/rateGen/make_x16en.clockCount_8> of sequential type is unconnected in block <lab2_design_top>.
-WARNING:Xst:2677 - Node <make_UART/rateGen/make_x16en.clockCount_7> of sequential type is unconnected in block <lab2_design_top>.
-WARNING:Xst:2677 - Node <make_UART/rateGen/make_x16en.clockCount_6> of sequential type is unconnected in block <lab2_design_top>.
-WARNING:Xst:2677 - Node <make_UART/rateGen/make_x16en.clockCount_5> of sequential type is unconnected in block <lab2_design_top>.
-WARNING:Xst:2677 - Node <make_UART/rateGen/make_x16en.clockCount_4> of sequential type is unconnected in block <lab2_design_top>.
-WARNING:Xst:2677 - Node <make_UART/rateGen/make_x16en.clockCount_3> of sequential type is unconnected in block <lab2_design_top>.
-WARNING:Xst:2677 - Node <make_UART/rateGen/make_x16en.clockCount_2> of sequential type is unconnected in block <lab2_design_top>.
-WARNING:Xst:2677 - Node <make_UART/rateGen/make_x16en.clockCount_1> of sequential type is unconnected in block <lab2_design_top>.
-WARNING:Xst:2677 - Node <make_UART/rateGen/make_x16en.clockCount_0> of sequential type is unconnected in block <lab2_design_top>.
-WARNING:Xst:2677 - Node <make_UART/rateGen/baudRateEnable_x16> of sequential type is unconnected in block <lab2_design_top>.
 INFO:Xst:2261 - The FF/Latch <DIP_debouncers[3].dbncr/dbnceSM.state_FSM_FFd2> in Unit <lab2_design_top> is equivalent to the following 3 FFs/Latches, which will be removed : <DIP_debouncers[2].dbncr/dbnceSM.state_FSM_FFd2> <DIP_debouncers[1].dbncr/dbnceSM.state_FSM_FFd2> <DIP_debouncers[0].dbncr/dbnceSM.state_FSM_FFd2> 
 
 Mapping all equations...
 Building and optimizing final netlist ...
 Found area constraint ratio of 100 (+ 5) on block lab2_design_top, actual ratio is 0.
-FlipFlop decoder/start_timer has been replicated 2 time(s)
+FlipFlop decoder/start_timer has been replicated 1 time(s)
 
 Final Macro Processing ...
 
@@ -538,8 +526,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 243
- Flip-Flops                                            : 243
+# Registers                                            : 188
+ Flip-Flops                                            : 188
 
 =========================================================================
 
@@ -562,23 +550,23 @@ Top Level Output File Name         : lab2_design_top.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 617
+# BELS                             : 327
 #      GND                         : 1
 #      INV                         : 5
-#      LUT1                        : 24
-#      LUT2                        : 35
-#      LUT3                        : 125
-#      LUT4                        : 50
-#      LUT5                        : 39
-#      LUT6                        : 62
-#      MUXCY                       : 133
+#      LUT1                        : 10
+#      LUT2                        : 40
+#      LUT3                        : 49
+#      LUT4                        : 51
+#      LUT5                        : 43
+#      LUT6                        : 53
+#      MUXCY                       : 35
 #      MUXF7                       : 2
 #      VCC                         : 1
-#      XORCY                       : 140
-# FlipFlops/Latches                : 243
-#      FD                          : 86
-#      FDE                         : 126
-#      FDR                         : 22
+#      XORCY                       : 37
+# FlipFlops/Latches                : 188
+#      FD                          : 73
+#      FDE                         : 66
+#      FDR                         : 40
 #      FDRE                        : 6
 #      FDS                         : 2
 #      FDSE                        : 1
@@ -595,16 +583,16 @@ Selected Device : xa7a100tcsg324-2i
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             243  out of  126800     0%  
- Number of Slice LUTs:                  340  out of  63400     0%  
-    Number used as Logic:               340  out of  63400     0%  
+ Number of Slice Registers:             188  out of  126800     0%  
+ Number of Slice LUTs:                  251  out of  63400     0%  
+    Number used as Logic:               251  out of  63400     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    355
-   Number with an unused Flip Flop:     112  out of    355    31%  
-   Number with an unused LUT:            15  out of    355     4%  
-   Number of fully used LUT-FF pairs:   228  out of    355    64%  
-   Number of unique control sets:        18
+ Number of LUT Flip Flop pairs used:    265
+   Number with an unused Flip Flop:      77  out of    265    29%  
+   Number with an unused LUT:            14  out of    265     5%  
+   Number of fully used LUT-FF pairs:   174  out of    265    65%  
+   Number of unique control sets:        20
 
 IO Utilization: 
  Number of IOs:                          10
@@ -634,7 +622,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clock_pin                          | BUFGP                  | 243   |
+clock_pin                          | BUFGP                  | 188   |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -645,8 +633,8 @@ Timing Summary:
 ---------------
 Speed Grade: -2
 
-   Minimum period: 3.452ns (Maximum Frequency: 289.649MHz)
-   Minimum input arrival time before clock: 1.685ns
+   Minimum period: 3.481ns (Maximum Frequency: 287.237MHz)
+   Minimum input arrival time before clock: 1.695ns
    Maximum output required time after clock: 0.705ns
    Maximum combinational path delay: No path found
 
@@ -656,10 +644,10 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clock_pin'
-  Clock period: 3.452ns (frequency: 289.649MHz)
-  Total number of paths / destination ports: 7815 / 380
+  Clock period: 3.481ns (frequency: 287.237MHz)
+  Total number of paths / destination ports: 2899 / 283
 -------------------------------------------------------------------------
-Delay:               3.452ns (Levels of Logic = 18)
+Delay:               3.481ns (Levels of Logic = 25)
   Source:            decoder/mk_timer.timer_value_0 (FF)
   Destination:       decoder/mk_timer.timer_running (FF)
   Source Clock:      clock_pin rising
@@ -685,19 +673,26 @@ Delay:               3.452ns (Levels of Logic = 18)
      MUXCY:CI->O           1   0.023   0.000  decoder/Madd_mk_timer.timer_value[25]_GND_9_o_add_13_OUT_cy<11> (decoder/Madd_mk_timer.timer_value[25]_GND_9_o_add_13_OUT_cy<11>)
      MUXCY:CI->O           1   0.023   0.000  decoder/Madd_mk_timer.timer_value[25]_GND_9_o_add_13_OUT_cy<12> (decoder/Madd_mk_timer.timer_value[25]_GND_9_o_add_13_OUT_cy<12>)
      MUXCY:CI->O           1   0.023   0.000  decoder/Madd_mk_timer.timer_value[25]_GND_9_o_add_13_OUT_cy<13> (decoder/Madd_mk_timer.timer_value[25]_GND_9_o_add_13_OUT_cy<13>)
-     XORCY:CI->O           2   0.370   0.748  decoder/Madd_mk_timer.timer_value[25]_GND_9_o_add_13_OUT_xor<14> (decoder/mk_timer.timer_value[25]_GND_9_o_add_13_OUT<14>)
-     LUT6:I1->O            1   0.097   0.571  decoder/PWR_11_o_mk_timer.timer_value[25]_equal_16_o10 (decoder/PWR_11_o_mk_timer.timer_value[25]_equal_16_o10)
-     LUT6:I3->O            1   0.097   0.000  decoder/mk_timer.timer_running_rstpot (decoder/mk_timer.timer_running_rstpot)
+     MUXCY:CI->O           1   0.023   0.000  decoder/Madd_mk_timer.timer_value[25]_GND_9_o_add_13_OUT_cy<14> (decoder/Madd_mk_timer.timer_value[25]_GND_9_o_add_13_OUT_cy<14>)
+     MUXCY:CI->O           1   0.023   0.000  decoder/Madd_mk_timer.timer_value[25]_GND_9_o_add_13_OUT_cy<15> (decoder/Madd_mk_timer.timer_value[25]_GND_9_o_add_13_OUT_cy<15>)
+     MUXCY:CI->O           1   0.023   0.000  decoder/Madd_mk_timer.timer_value[25]_GND_9_o_add_13_OUT_cy<16> (decoder/Madd_mk_timer.timer_value[25]_GND_9_o_add_13_OUT_cy<16>)
+     MUXCY:CI->O           1   0.023   0.000  decoder/Madd_mk_timer.timer_value[25]_GND_9_o_add_13_OUT_cy<17> (decoder/Madd_mk_timer.timer_value[25]_GND_9_o_add_13_OUT_cy<17>)
+     MUXCY:CI->O           1   0.023   0.000  decoder/Madd_mk_timer.timer_value[25]_GND_9_o_add_13_OUT_cy<18> (decoder/Madd_mk_timer.timer_value[25]_GND_9_o_add_13_OUT_cy<18>)
+     MUXCY:CI->O           1   0.023   0.000  decoder/Madd_mk_timer.timer_value[25]_GND_9_o_add_13_OUT_cy<19> (decoder/Madd_mk_timer.timer_value[25]_GND_9_o_add_13_OUT_cy<19>)
+     MUXCY:CI->O           1   0.023   0.000  decoder/Madd_mk_timer.timer_value[25]_GND_9_o_add_13_OUT_cy<20> (decoder/Madd_mk_timer.timer_value[25]_GND_9_o_add_13_OUT_cy<20>)
+     XORCY:CI->O           2   0.370   0.444  decoder/Madd_mk_timer.timer_value[25]_GND_9_o_add_13_OUT_xor<21> (decoder/mk_timer.timer_value[25]_GND_9_o_add_13_OUT<21>)
+     LUT5:I3->O            1   0.097   0.743  decoder/PWR_11_o_mk_timer.timer_value[25]_equal_16_o13 (decoder/PWR_11_o_mk_timer.timer_value[25]_equal_16_o13)
+     LUT6:I1->O            1   0.097   0.000  decoder/mk_timer.timer_running_rstpot (decoder/mk_timer.timer_running_rstpot)
      FD:D                      0.008          decoder/mk_timer.timer_running
     ----------------------------------------
-    Total                      3.452ns (1.682ns logic, 1.770ns route)
-                                       (48.7% logic, 51.3% route)
+    Total                      3.481ns (1.843ns logic, 1.638ns route)
+                                       (52.9% logic, 47.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clock_pin'
   Total number of paths / destination ports: 80 / 71
 -------------------------------------------------------------------------
-Offset:              1.685ns (Levels of Logic = 3)
+Offset:              1.695ns (Levels of Logic = 3)
   Source:            reset_pin (PAD)
   Destination:       make_UART/xmit/tx_sm.bitToSend_2 (FF)
   Destination Clock: clock_pin rising
@@ -706,13 +701,13 @@ Offset:              1.685ns (Levels of Logic = 3)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            23   0.001   0.862  reset_pin_IBUF (reset_pin_IBUF)
-     LUT6:I1->O            1   0.097   0.000  make_UART/xmit/_n0091_inv_G (N73)
+     IBUF:I->O            23   0.001   0.872  reset_pin_IBUF (reset_pin_IBUF)
+     LUT6:I0->O            1   0.097   0.000  make_UART/xmit/_n0091_inv_G (N31)
      MUXF7:I1->O           3   0.279   0.351  make_UART/xmit/_n0091_inv (make_UART/xmit/_n0091_inv)
      FDE:CE                    0.095          make_UART/xmit/tx_sm.bitToSend_0
     ----------------------------------------
-    Total                      1.685ns (0.472ns logic, 1.213ns route)
-                                       (28.0% logic, 72.0% route)
+    Total                      1.695ns (0.472ns logic, 1.223ns route)
+                                       (27.8% logic, 72.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clock_pin'
@@ -743,21 +738,21 @@ Clock to Setup on destination clock clock_pin
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clock_pin      |    3.452|         |         |         |
+clock_pin      |    3.481|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 23.00 secs
-Total CPU time to Xst completion: 20.88 secs
+Total REAL time to Xst completion: 24.00 secs
+Total CPU time to Xst completion: 23.75 secs
  
 --> 
 
 
-Total memory usage is 952552 kilobytes
+Total memory usage is 843596 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   20 (   0 filtered)
-Number of infos    :    7 (   0 filtered)
+Number of warnings :   10 (   0 filtered)
+Number of infos    :    6 (   0 filtered)
 

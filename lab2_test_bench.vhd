@@ -22,6 +22,10 @@ ARCHITECTURE behavior OF lab2_test_bench IS
     END COMPONENT;
     
 
+	-- Message to send, in the form of an array of HEX
+	type msg_type is array (0 to 9) of std_logic_vector(7 downto 0);
+	signal message_in : msg_type := (x"30", x"31", x"32", x"33", x"34", x"35", x"36", x"37", x"38", x"39");
+	
    --Inputs
    signal reset_pin : std_logic := '0';
    signal clock_pin : std_logic := '0';
@@ -93,11 +97,14 @@ BEGIN
 		
       wait for baud_rate_period*3;
 
-      -- insert stimulus here 
-		msg_to_send <= generate_UART_msg("00110001");
-		for i in 0 to 9 loop
-			wait until baud_state'event and baud_state = '1';
-			serialDataIn_pin <= msg_to_send(i);
+      -- insert stimulus here
+		for charac in message_in'range loop
+			msg_to_send <= generate_UART_msg(message_in(charac));
+			for i in 0 to 9 loop
+				wait until baud_state'event and baud_state = '1';
+				serialDataIn_pin <= msg_to_send(i);
+			end loop;
+			wait for 30 us;
 		end loop;
 
       wait;

@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "/home/ise/VHDL/vhdl-assignment-2/character_decoder.vhd";
+static const char *ng0 = "/config/VHDL/vhdl-assignment-2/character_decoder.vhd";
 extern char *IEEE_P_2592010699;
 extern char *IEEE_P_1242562249;
 
@@ -108,7 +108,7 @@ LAB6:    goto LAB3;
 LAB5:    xsi_set_current_line(35, ng0);
     t1 = (t0 + 1352U);
     t4 = *((char **)t1);
-    t1 = (t0 + 9629);
+    t1 = (t0 + 9581);
     t6 = ((IEEE_P_2592010699) + 4000);
     t11 = xsi_vhdl_greaterEqual(t6, t4, 8U, t1, 8U);
     if (t11 == 1)
@@ -121,7 +121,7 @@ LAB13:    if (t10 != 0)
 
 LAB10:    t1 = (t0 + 1352U);
     t3 = *((char **)t1);
-    t1 = (t0 + 9645);
+    t1 = (t0 + 9597);
     t5 = ((IEEE_P_2592010699) + 4000);
     t9 = xsi_vhdl_greaterEqual(t5, t3, 8U, t1, 8U);
     if (t9 == 1)
@@ -134,7 +134,7 @@ LAB18:    if (t2 != 0)
 
 LAB15:    t1 = (t0 + 1352U);
     t3 = *((char **)t1);
-    t1 = (t0 + 9661);
+    t1 = (t0 + 9613);
     t5 = ((IEEE_P_2592010699) + 4000);
     t9 = xsi_vhdl_greaterEqual(t5, t3, 8U, t1, 8U);
     if (t9 == 1)
@@ -209,7 +209,7 @@ LAB8:    xsi_set_current_line(36, ng0);
     xsi_set_current_line(38, ng0);
     t1 = (t0 + 1352U);
     t3 = *((char **)t1);
-    t1 = (t0 + 9520U);
+    t1 = (t0 + 9472U);
     t20 = ieee_p_1242562249_sub_17802405650254020620_1035706684(IEEE_P_1242562249, t3, t1);
     t4 = (t0 + 3208U);
     t5 = *((char **)t4);
@@ -240,7 +240,7 @@ LAB8:    xsi_set_current_line(36, ng0);
 
 LAB11:    t7 = (t0 + 1352U);
     t8 = *((char **)t7);
-    t7 = (t0 + 9637);
+    t7 = (t0 + 9589);
     t13 = ((IEEE_P_2592010699) + 4000);
     t14 = xsi_vhdl_lessthanEqual(t13, t8, 8U, t7, 8U);
     t10 = t14;
@@ -265,7 +265,7 @@ LAB14:    xsi_set_current_line(43, ng0);
     xsi_set_current_line(45, ng0);
     t1 = (t0 + 1352U);
     t3 = *((char **)t1);
-    t1 = (t0 + 9520U);
+    t1 = (t0 + 9472U);
     t20 = ieee_p_1242562249_sub_17802405650254020620_1035706684(IEEE_P_1242562249, t3, t1);
     t4 = (t0 + 3208U);
     t5 = *((char **)t4);
@@ -296,7 +296,7 @@ LAB14:    xsi_set_current_line(43, ng0);
 
 LAB16:    t6 = (t0 + 1352U);
     t7 = *((char **)t6);
-    t6 = (t0 + 9653);
+    t6 = (t0 + 9605);
     t12 = ((IEEE_P_2592010699) + 4000);
     t10 = xsi_vhdl_lessthanEqual(t12, t7, 8U, t6, 8U);
     t2 = t10;
@@ -332,7 +332,7 @@ LAB19:    xsi_set_current_line(50, ng0);
 
 LAB21:    t6 = (t0 + 1352U);
     t7 = *((char **)t6);
-    t6 = (t0 + 9669);
+    t6 = (t0 + 9621);
     t12 = ((IEEE_P_2592010699) + 4000);
     t10 = xsi_vhdl_lessthanEqual(t12, t7, 8U, t6, 8U);
     t2 = t10;

@@ -77,6 +77,7 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="lab2_design_top.unroutes" xil_pn:subbranch="Par"/>
     <file xil_pn:fileType="FILE_XPI" xil_pn:name="lab2_design_top.xpi"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="lab2_design_top.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="lab2_design_top_envsettings.html"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="lab2_design_top_fpga_editor.log"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="lab2_design_top_guide.ncd" xil_pn:origination="imported"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="lab2_design_top_isim_beh.exe"/>
@@ -89,6 +90,7 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="lab2_design_top_pad.csv" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="lab2_design_top_pad.txt" xil_pn:subbranch="Par"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="lab2_design_top_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="lab2_design_top_summary.html"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="lab2_design_top_summary.xml"/>
     <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="lab2_design_top_usage.xml"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="lab2_design_top_xst.xrpt"/>
@@ -111,36 +113,11 @@
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1616764418" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1616764418">
+    <transform xil_pn:end_ts="1617018314" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1617018314">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1616767186" xil_pn:in_ck="-5694050234498059012" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1616767186">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="UART.vhd"/>
-      <outfile xil_pn:name="UART_baudRateGenerator.vhd"/>
-      <outfile xil_pn:name="UART_receiver.vhd"/>
-      <outfile xil_pn:name="UART_transmitter.vhd"/>
-      <outfile xil_pn:name="character_decoder.vhd"/>
-      <outfile xil_pn:name="character_encoder.vhd"/>
-      <outfile xil_pn:name="debouncer.vhd"/>
-      <outfile xil_pn:name="lab2_test_bench.vhd"/>
-      <outfile xil_pn:name="lab_design_top.vhd"/>
-    </transform>
-    <transform xil_pn:end_ts="1616765448" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="1247128429697496117" xil_pn:start_ts="1616765448">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1616765448" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="8725425427393898337" xil_pn:start_ts="1616765448">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1616764418" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="4538692289709153880" xil_pn:start_ts="1616764418">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1616767186" xil_pn:in_ck="-5694050234498059012" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1616767186">
+    <transform xil_pn:end_ts="1617618740" xil_pn:in_ck="-5694050234498059012" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1617618740">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="UART.vhd"/>
@@ -153,7 +130,32 @@
       <outfile xil_pn:name="lab2_test_bench.vhd"/>
       <outfile xil_pn:name="lab_design_top.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1616767189" xil_pn:in_ck="-5694050234498059012" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="1860506114226857083" xil_pn:start_ts="1616767186">
+    <transform xil_pn:end_ts="1617018314" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="1247128429697496117" xil_pn:start_ts="1617018314">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1617018314" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="8725425427393898337" xil_pn:start_ts="1617018314">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1617018314" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="4538692289709153880" xil_pn:start_ts="1617018314">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1617618740" xil_pn:in_ck="-5694050234498059012" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1617618740">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="UART.vhd"/>
+      <outfile xil_pn:name="UART_baudRateGenerator.vhd"/>
+      <outfile xil_pn:name="UART_receiver.vhd"/>
+      <outfile xil_pn:name="UART_transmitter.vhd"/>
+      <outfile xil_pn:name="character_decoder.vhd"/>
+      <outfile xil_pn:name="character_encoder.vhd"/>
+      <outfile xil_pn:name="debouncer.vhd"/>
+      <outfile xil_pn:name="lab2_test_bench.vhd"/>
+      <outfile xil_pn:name="lab_design_top.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1617618742" xil_pn:in_ck="-5694050234498059012" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="1860506114226857083" xil_pn:start_ts="1617618740">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
@@ -165,7 +167,7 @@
       <outfile xil_pn:name="lab2_test_bench_isim_beh.exe"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1616767189" xil_pn:in_ck="-3794534673770545735" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="5378094376291686899" xil_pn:start_ts="1616767189">
+    <transform xil_pn:end_ts="1617619053" xil_pn:in_ck="-3794534673770545735" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="2814425533059990634" xil_pn:start_ts="1617619053">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
@@ -202,14 +204,10 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1616688926" xil_pn:in_ck="2213386645525950253" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="9004035884734572844" xil_pn:start_ts="1616688901">
+    <transform xil_pn:end_ts="1617619591" xil_pn:in_ck="2213386645525950253" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="9004035884734572844" xil_pn:start_ts="1617619565">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="lab2_design_top.lso"/>
       <outfile xil_pn:name="lab2_design_top.ngc"/>
@@ -229,7 +227,8 @@
     <transform xil_pn:end_ts="1616756047" xil_pn:in_ck="3832547887317593810" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-5026694932147142080" xil_pn:start_ts="1616756040">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
       <outfile xil_pn:name="lab2_design_top.bld"/>

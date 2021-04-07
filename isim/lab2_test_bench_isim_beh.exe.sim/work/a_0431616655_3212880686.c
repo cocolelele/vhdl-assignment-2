@@ -22,7 +22,7 @@
 #define alloca _alloca
 #endif
 static const char *ng0 = "Function statetostring ended without a return statement";
-static const char *ng1 = "/home/ise/VHDL/vhdl-assignment-2/UART_receiver.vhd";
+static const char *ng1 = "/config/VHDL/vhdl-assignment-2/UART_receiver.vhd";
 extern char *IEEE_P_2592010699;
 
 unsigned char ieee_p_2592010699_sub_2763492388968962707_503743352(char *, char *, unsigned int , unsigned int );
@@ -51,7 +51,7 @@ LAB2:    xsi_error(ng0);
     t0 = 0;
 
 LAB1:    return t0;
-LAB3:    t8 = (t1 + 8500);
+LAB3:    t8 = (t1 + 8460);
     t0 = xsi_get_transient_memory(4U);
     memcpy(t0, t8, 4U);
     t10 = (t2 + 0U);
@@ -68,7 +68,7 @@ LAB3:    t8 = (t1 + 8500);
     *((unsigned int *)t11) = t13;
     goto LAB1;
 
-LAB4:    t7 = (t1 + 8504);
+LAB4:    t7 = (t1 + 8464);
     t0 = xsi_get_transient_memory(13U);
     memcpy(t0, t7, 13U);
     t9 = (t2 + 0U);
@@ -85,7 +85,7 @@ LAB4:    t7 = (t1 + 8504);
     *((unsigned int *)t10) = t13;
     goto LAB1;
 
-LAB5:    t7 = (t1 + 8517);
+LAB5:    t7 = (t1 + 8477);
     t0 = xsi_get_transient_memory(13U);
     memcpy(t0, t7, 13U);
     t9 = (t2 + 0U);
@@ -102,7 +102,7 @@ LAB5:    t7 = (t1 + 8517);
     *((unsigned int *)t10) = t13;
     goto LAB1;
 
-LAB6:    t7 = (t1 + 8530);
+LAB6:    t7 = (t1 + 8490);
     t0 = xsi_get_transient_memory(12U);
     memcpy(t0, t7, 12U);
     t9 = (t2 + 0U);
