@@ -2,13 +2,13 @@
 Release 14.7 Trace  (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v 3 -s 2I
--n 3 -fastpaths -xml lab2_design_top.twx lab2_design_top.ncd -o
+/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v 3 -s 3 -n
+3 -fastpaths -xml lab2_design_top.twx lab2_design_top.ncd -o
 lab2_design_top.twr lab2_design_top.pcf
 
 Design file:              lab2_design_top.ncd
 Physical constraint file: lab2_design_top.pcf
-Device,package,speed:     xa7a100t,csg324,I,-2I (PRELIMINARY 1.07 2013-10-13)
+Device,package,speed:     xc6slx9,tqg144,C,-3 (PRODUCTION 1.23 2013-10-13)
 Report level:             verbose report
 
 Environment Variable      Effect 
@@ -37,12 +37,12 @@ Setup/Hold to clock clock_pin
                 |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
 Source          | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
 ----------------+------------+------------+------------+------------+------------------+--------+
-DIP_pins<0>     |    0.254(R)|      FAST  |    1.743(R)|      SLOW  |clock_pin_BUFGP   |   0.000|
-DIP_pins<1>     |    0.438(R)|      FAST  |    1.601(R)|      SLOW  |clock_pin_BUFGP   |   0.000|
-DIP_pins<2>     |    0.497(R)|      FAST  |    1.708(R)|      SLOW  |clock_pin_BUFGP   |   0.000|
-DIP_pins<3>     |    0.341(R)|      FAST  |    1.948(R)|      SLOW  |clock_pin_BUFGP   |   0.000|
-reset_pin       |    0.697(R)|      FAST  |    1.846(R)|      SLOW  |clock_pin_BUFGP   |   0.000|
-serialDataIn_pin|    0.689(R)|      FAST  |    1.999(R)|      SLOW  |clock_pin_BUFGP   |   0.000|
+DIP_pins<0>     |    1.278(R)|      SLOW  |   -0.225(R)|      SLOW  |clock_pin_BUFGP   |   0.000|
+DIP_pins<1>     |    1.189(R)|      SLOW  |    0.008(R)|      SLOW  |clock_pin_BUFGP   |   0.000|
+DIP_pins<2>     |    1.166(R)|      SLOW  |   -0.090(R)|      SLOW  |clock_pin_BUFGP   |   0.000|
+DIP_pins<3>     |    1.104(R)|      SLOW  |    0.089(R)|      SLOW  |clock_pin_BUFGP   |   0.000|
+reset_pin       |    4.110(R)|      SLOW  |    0.353(R)|      SLOW  |clock_pin_BUFGP   |   0.000|
+serialDataIn_pin|    2.538(R)|      SLOW  |    0.043(R)|      SLOW  |clock_pin_BUFGP   |   0.000|
 ----------------+------------+------------+------------+------------+------------------+--------+
 
 Clock clock_pin to Pad
@@ -50,9 +50,10 @@ Clock clock_pin to Pad
                  |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination      |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 -----------------+-----------------+------------+-----------------+------------+------------------+--------+
-LED_hi_pin       |         9.249(R)|      SLOW  |         3.646(R)|      FAST  |clock_pin_BUFGP   |   0.000|
-LED_lo_pin       |         8.974(R)|      SLOW  |         3.484(R)|      FAST  |clock_pin_BUFGP   |   0.000|
-serialDataOut_pin|         9.226(R)|      SLOW  |         3.618(R)|      FAST  |clock_pin_BUFGP   |   0.000|
+Error_pin        |         7.560(R)|      SLOW  |         4.053(R)|      FAST  |clock_pin_BUFGP   |   0.000|
+LED_hi_pin       |         6.990(R)|      SLOW  |         3.661(R)|      FAST  |clock_pin_BUFGP   |   0.000|
+LED_lo_pin       |         7.172(R)|      SLOW  |         3.752(R)|      FAST  |clock_pin_BUFGP   |   0.000|
+serialDataOut_pin|         8.103(R)|      SLOW  |         4.332(R)|      FAST  |clock_pin_BUFGP   |   0.000|
 -----------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock to Setup on destination clock clock_pin
@@ -60,18 +61,18 @@ Clock to Setup on destination clock clock_pin
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clock_pin      |    3.575|         |         |         |
+clock_pin      |    4.741|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Fri Mar 26 10:55:03 2021 
+Analysis completed Fri Apr 23 13:05:36 2021 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 768 MB
+Peak Memory Usage: 386 MB
 
 
 

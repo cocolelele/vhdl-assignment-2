@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "secureip" -o "/home/ise/VHDL/vhdl-assignment-2/test_alu_single_digit_isim_beh.exe" -prj "/home/ise/VHDL/vhdl-assignment-2/test_alu_single_digit_beh.prj" "work.test_alu_single_digit" 
+-intstyle "ise" -incremental -lib "secureip" -o "/home/ise/VHDL/vhdl-assignment-2/lab2_test_bench_isim_beh.exe" -prj "/home/ise/VHDL/vhdl-assignment-2/lab2_test_bench_beh.prj" "work.lab2_test_bench" 

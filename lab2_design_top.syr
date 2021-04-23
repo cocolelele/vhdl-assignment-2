@@ -368,12 +368,12 @@ Synthesizing Unit <ALU_single_digit>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 5-bit adder for signal <n0106[4:0]> created at line 115.
-    Found 4-bit subtractor for signal <GND_12_o_GND_12_o_sub_7_OUT<3:0>> created at line 77.
-    Found 4-bit subtractor for signal <GND_12_o_GND_12_o_sub_25_OUT<3:0>> created at line 116.
-    Found 4x4-bit multiplier for signal <input_a[3]_input_b[3]_MuLt_22_OUT> created at line 114.
-    Found 8-bit 7-to-1 multiplexer for signal <operation[2]_int_output[7]_wide_mux_26_OUT> created at line 113.
-    Found 4-bit comparator greater for signal <n0018> created at line 103
+    Found 5-bit adder for signal <n0105[4:0]> created at line 116.
+    Found 4-bit subtractor for signal <GND_12_o_GND_12_o_sub_7_OUT<3:0>> created at line 78.
+    Found 4-bit subtractor for signal <GND_12_o_GND_12_o_sub_25_OUT<3:0>> created at line 117.
+    Found 4x4-bit multiplier for signal <input_a[3]_input_b[3]_MuLt_22_OUT> created at line 115.
+    Found 8-bit 7-to-1 multiplexer for signal <operation[2]_int_output[7]_wide_mux_26_OUT> created at line 114.
+    Found 4-bit comparator greater for signal <n0017> created at line 104
     Summary:
 	inferred   1 Multiplier(s).
 	inferred   3 Adder/Subtractor(s).
@@ -623,8 +623,6 @@ Mapping all equations...
 Building and optimizing final netlist ...
 Found area constraint ratio of 100 (+ 5) on block lab2_design_top, actual ratio is 8.
 FlipFlop ALU/input_a_1 has been replicated 1 time(s)
-FlipFlop ALU/input_a_2 has been replicated 1 time(s)
-FlipFlop ALU/input_b_1 has been replicated 1 time(s)
 FlipFlop decoder/start_timer has been replicated 2 time(s)
 
 Final Macro Processing ...
@@ -633,8 +631,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 222
- Flip-Flops                                            : 222
+# Registers                                            : 220
+ Flip-Flops                                            : 220
 
 =========================================================================
 
@@ -663,18 +661,18 @@ Primitive and Black Box Usage:
 #      LUT1                        : 10
 #      LUT2                        : 51
 #      LUT3                        : 61
-#      LUT4                        : 61
-#      LUT5                        : 61
+#      LUT4                        : 62
+#      LUT5                        : 60
 #      LUT6                        : 99
 #      MUXCY                       : 41
 #      MUXF7                       : 6
 #      VCC                         : 1
 #      XORCY                       : 44
-# FlipFlops/Latches                : 222
+# FlipFlops/Latches                : 220
 #      FD                          : 77
 #      FDE                         : 86
 #      FDR                         : 38
-#      FDRE                        : 19
+#      FDRE                        : 17
 #      FDS                         : 2
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
@@ -689,15 +687,15 @@ Selected Device : 6slx9tqg144-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             222  out of  11440     1%  
+ Number of Slice Registers:             220  out of  11440     1%  
  Number of Slice LUTs:                  349  out of   5720     6%  
     Number used as Logic:               349  out of   5720     6%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    361
-   Number with an unused Flip Flop:     139  out of    361    38%  
-   Number with an unused LUT:            12  out of    361     3%  
-   Number of fully used LUT-FF pairs:   210  out of    361    58%  
+ Number of LUT Flip Flop pairs used:    359
+   Number with an unused Flip Flop:     139  out of    359    38%  
+   Number with an unused LUT:            10  out of    359     2%  
+   Number of fully used LUT-FF pairs:   210  out of    359    58%  
    Number of unique control sets:        25
 
 IO Utilization: 
@@ -728,7 +726,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clock_pin                          | BUFGP                  | 222   |
+clock_pin                          | BUFGP                  | 220   |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -739,8 +737,8 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 5.131ns (Maximum Frequency: 194.901MHz)
-   Minimum input arrival time before clock: 4.355ns
+   Minimum period: 5.148ns (Maximum Frequency: 194.258MHz)
+   Minimum input arrival time before clock: 4.327ns
    Maximum output required time after clock: 3.668ns
    Maximum combinational path delay: No path found
 
@@ -750,10 +748,10 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clock_pin'
-  Clock period: 5.131ns (frequency: 194.901MHz)
-  Total number of paths / destination ports: 4333 / 341
+  Clock period: 5.148ns (frequency: 194.258MHz)
+  Total number of paths / destination ports: 4309 / 337
 -------------------------------------------------------------------------
-Delay:               5.131ns (Levels of Logic = 8)
+Delay:               5.148ns (Levels of Logic = 8)
   Source:            decoder/start_timer_1 (FF)
   Destination:       decoder/mk_timer.timer_running (FF)
   Source Clock:      clock_pin rising
@@ -770,18 +768,18 @@ Delay:               5.131ns (Levels of Logic = 8)
      MUXCY:CI->O           1   0.019   0.000  decoder/Madd_mk_timer.timer_value[25]_GND_9_o_add_22_OUT_cy<2> (decoder/Madd_mk_timer.timer_value[25]_GND_9_o_add_22_OUT_cy<2>)
      XORCY:CI->O           1   0.180   0.580  decoder/Madd_mk_timer.timer_value[25]_GND_9_o_add_22_OUT_xor<3> (decoder/mk_timer.timer_value[25]_GND_9_o_add_22_OUT<3>)
      LUT4:I3->O            2   0.205   0.981  decoder/Mmux_mk_timer.timer_value[25]_mk_timer.timer_value[25]_mux_23_OUT201 (decoder/mk_timer.timer_value[25]_mk_timer.timer_value[25]_mux_23_OUT<3>)
-     LUT6:I0->O            1   0.203   0.808  decoder/PWR_11_o_mk_timer.timer_value[25]_equal_25_o<25>4 (decoder/PWR_11_o_mk_timer.timer_value[25]_equal_25_o<25>3)
-     LUT6:I3->O            1   0.205   0.000  decoder/mk_timer.timer_running_rstpot (decoder/mk_timer.timer_running_rstpot)
+     LUT6:I0->O            1   0.203   0.827  decoder/PWR_11_o_mk_timer.timer_value[25]_equal_25_o<25>4 (decoder/PWR_11_o_mk_timer.timer_value[25]_equal_25_o<25>3)
+     LUT6:I2->O            1   0.203   0.000  decoder/mk_timer.timer_running_rstpot (decoder/mk_timer.timer_running_rstpot)
      FD:D                      0.102          decoder/mk_timer.timer_running
     ----------------------------------------
-    Total                      5.131ns (1.757ns logic, 3.374ns route)
-                                       (34.2% logic, 65.8% route)
+    Total                      5.148ns (1.755ns logic, 3.393ns route)
+                                       (34.1% logic, 65.9% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clock_pin'
-  Total number of paths / destination ports: 115 / 106
+  Total number of paths / destination ports: 113 / 104
 -------------------------------------------------------------------------
-Offset:              4.355ns (Levels of Logic = 2)
+Offset:              4.327ns (Levels of Logic = 2)
   Source:            reset_pin (PAD)
   Destination:       ALU/int_output_0 (FF)
   Destination Clock: clock_pin rising
@@ -790,12 +788,12 @@ Offset:              4.355ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            44   1.222   1.807  reset_pin_IBUF (reset_pin_IBUF)
-     LUT5:I0->O            8   0.203   0.802  ALU/_n0146_inv1 (ALU/_n0146_inv)
+     IBUF:I->O            42   1.222   1.778  reset_pin_IBUF (reset_pin_IBUF)
+     LUT5:I0->O            8   0.203   0.802  ALU/_n0145_inv1 (ALU/_n0145_inv)
      FDE:CE                    0.322          ALU/int_output_0
     ----------------------------------------
-    Total                      4.355ns (1.747ns logic, 2.608ns route)
-                                       (40.1% logic, 59.9% route)
+    Total                      4.327ns (1.747ns logic, 2.580ns route)
+                                       (40.4% logic, 59.6% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clock_pin'
@@ -826,19 +824,19 @@ Clock to Setup on destination clock clock_pin
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clock_pin      |    5.131|         |         |         |
+clock_pin      |    5.148|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
 Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 4.43 secs
+Total CPU time to Xst completion: 4.23 secs
  
 --> 
 
 
-Total memory usage is 487904 kilobytes
+Total memory usage is 487896 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    9 (   0 filtered)

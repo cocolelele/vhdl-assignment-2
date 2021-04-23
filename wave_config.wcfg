@@ -11,15 +11,7 @@
          </top_modules>
       </db_ref>
    </db_ref_list>
-   <WVObjectSize size="11" />
-   <wvobject fp_name="/lab2_test_bench/clock_pin" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">clock_pin</obj_property>
-      <obj_property name="ObjectShortName">clock_pin</obj_property>
-   </wvobject>
-   <wvobject fp_name="/lab2_test_bench/baud_state" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">baud_state</obj_property>
-      <obj_property name="ObjectShortName">baud_state</obj_property>
-   </wvobject>
+   <WVObjectSize size="8" />
    <wvobject fp_name="/lab2_test_bench/serialdatain_pin" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">serialdatain_pin</obj_property>
       <obj_property name="ObjectShortName">serialdatain_pin</obj_property>
@@ -28,35 +20,28 @@
       <obj_property name="ElementShortName">serialdataout_pin</obj_property>
       <obj_property name="ObjectShortName">serialdataout_pin</obj_property>
    </wvobject>
-   <wvobject fp_name="/lab2_test_bench/uut/make_UART/rcvr/rxstate" type="other" db_ref_id="1">
-      <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="ElementShortName">rxstate</obj_property>
-      <obj_property name="ObjectShortName">rxstate</obj_property>
-      <obj_property name="label">rxstate</obj_property>
+   <wvobject fp_name="/lab2_test_bench/error_pin" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">error_pin</obj_property>
+      <obj_property name="ObjectShortName">error_pin</obj_property>
    </wvobject>
-   <wvobject fp_name="/lab2_test_bench/uut/make_UART/xmit/txstate" type="other" db_ref_id="1">
-      <obj_property name="ElementShortName">txstate</obj_property>
-      <obj_property name="ObjectShortName">txstate</obj_property>
+   <wvobject fp_name="/lab2_test_bench/uut/decoder/lut_new_char" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">lut_new_char</obj_property>
+      <obj_property name="ObjectShortName">lut_new_char</obj_property>
    </wvobject>
-   <wvobject fp_name="/lab2_test_bench/dip_pins" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">dip_pins[3:0]</obj_property>
-      <obj_property name="ObjectShortName">dip_pins[3:0]</obj_property>
+   <wvobject fp_name="/lab2_test_bench/uut/decoder/lut_start" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">lut_start</obj_property>
+      <obj_property name="ObjectShortName">lut_start</obj_property>
    </wvobject>
-   <wvobject fp_name="/lab2_test_bench/msg_to_send" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">msg_to_send[9:0]</obj_property>
-      <obj_property name="ObjectShortName">msg_to_send[9:0]</obj_property>
+   <wvobject fp_name="/lab2_test_bench/uut/ALU/done" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
    </wvobject>
-   <wvobject fp_name="/lab2_test_bench/uut/paralleldatain" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">paralleldatain[7:0]</obj_property>
-      <obj_property name="ObjectShortName">paralleldatain[7:0]</obj_property>
+   <wvobject fp_name="/lab2_test_bench/uut/ALU/alustate" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">alustate</obj_property>
+      <obj_property name="ObjectShortName">alustate</obj_property>
    </wvobject>
-   <wvobject fp_name="/lab2_test_bench/uut/paralleldataout" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">paralleldataout[7:0]</obj_property>
-      <obj_property name="ObjectShortName">paralleldataout[7:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/lab2_test_bench/uut/decoder/lut_op" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">lut_op[3:0]</obj_property>
-      <obj_property name="ObjectShortName">lut_op[3:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   <wvobject fp_name="/lab2_test_bench/uut/ALU/operation" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">operation</obj_property>
+      <obj_property name="ObjectShortName">operation</obj_property>
    </wvobject>
 </wave_config>

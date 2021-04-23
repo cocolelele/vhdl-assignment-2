@@ -12,3 +12,8 @@ xst -intstyle ise -ifn "/home/ise/VHDL/vhdl-assignment-2/lab2_design_top.xst" -o
 xst -intstyle ise -ifn "/home/ise/VHDL/vhdl-assignment-2/lab2_design_top.xst" -ofn "/home/ise/VHDL/vhdl-assignment-2/lab2_design_top.syr" 
 xst -intstyle ise -ifn "/home/ise/VHDL/vhdl-assignment-2/lab2_design_top.xst" -ofn "/home/ise/VHDL/vhdl-assignment-2/lab2_design_top.syr" 
 xst -intstyle ise -ifn "/home/ise/VHDL/vhdl-assignment-2/lab2_design_top.xst" -ofn "/home/ise/VHDL/vhdl-assignment-2/lab2_design_top.syr" 
+xst -intstyle ise -ifn "/home/ise/VHDL/vhdl-assignment-2/lab2_design_top.xst" -ofn "/home/ise/VHDL/vhdl-assignment-2/lab2_design_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 lab2_design_top.ngc lab2_design_top.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab2_design_top_map.ncd lab2_design_top.ngd lab2_design_top.pcf 
+par -w -intstyle ise -ol high -mt off lab2_design_top_map.ncd lab2_design_top.ncd lab2_design_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab2_design_top.twx lab2_design_top.ncd -o lab2_design_top.twr lab2_design_top.pcf 

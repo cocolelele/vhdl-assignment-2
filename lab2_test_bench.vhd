@@ -17,14 +17,15 @@ ARCHITECTURE behavior OF lab2_test_bench IS
          serialDataOut_pin : OUT  std_logic;
          LED_hi_pin : OUT  std_logic;
          LED_lo_pin : OUT  std_logic;
+			Error_pin: out STD_LOGIC;
          DIP_pins : IN  std_logic_vector(3 downto 0)
         );
     END COMPONENT;
     
 
 	-- Message to send, in the form of an array of HEX
-	type msg_type is array (0 to 9) of std_logic_vector(7 downto 0);
-	signal message_in : msg_type := (x"30", x"31", x"32", x"33", x"34", x"35", x"36", x"37", x"38", x"39");
+	type msg_type is array (0 to 7) of std_logic_vector(7 downto 0);
+	signal message_in : msg_type := (x"0D", x"35", x"2B", x"37", x"0D", x"32", x"2A", x"39");
 	
    --Inputs
    signal reset_pin : std_logic := '0';
@@ -36,6 +37,7 @@ ARCHITECTURE behavior OF lab2_test_bench IS
    signal serialDataOut_pin : std_logic;
    signal LED_hi_pin : std_logic;
    signal LED_lo_pin : std_logic;
+	signal Error_pin : std_logic;
 
    -- Clock period definitions
    constant clock_pin_period : time := 15 ns;
@@ -66,6 +68,7 @@ BEGIN
           serialDataOut_pin => serialDataOut_pin,
           LED_hi_pin => LED_hi_pin,
           LED_lo_pin => LED_lo_pin,
+			 Error_pin => Error_pin,
           DIP_pins => DIP_pins
         );
 

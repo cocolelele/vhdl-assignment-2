@@ -66,9 +66,10 @@ begin
 							int_output := 0;
 							operation <= UKN;
 							error <= '0';
-							done <= '0';
+							--done <= '0';
 							aluState <= AWAIT_NUM1;
 						end if;
+						done <= '0';
 					
 					when AWAIT_NUM1 =>
 						if (new_char = '1') then
