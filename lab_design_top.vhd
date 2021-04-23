@@ -8,6 +8,7 @@ entity lab2_design_top is
 				serialDataOut_pin: out STD_LOGIC;
 				LED_hi_pin: out STD_LOGIC;
 				LED_lo_pin: out STD_LOGIC;
+				Error_pin: out STD_LOGIC;
 				DIP_pins: in STD_LOGIC_VECTOR (3 downto 0)
 			);
 end entity lab2_design_top;
@@ -36,7 +37,10 @@ architecture structural of lab2_design_top is
 			LED_hi : out STD_LOGIC;
 			LED_lo : out STD_LOGIC;
 			send_character : out STD_LOGIC;
-			character_to_send : out STD_LOGIC_VECTOR (7 downto 0)
+			character_to_send : out STD_LOGIC_VECTOR (7 downto 0);
+			lut_op : out STD_LOGIC_VECTOR (3 downto 0);
+			lut_new_char: out STD_LOGIC;
+			lut_start: out STD_LOGIC
 	);
 	end component;
 	
@@ -59,6 +63,18 @@ architecture structural of lab2_design_top is
 	);
 	end component;
 	
+	component ALU_single_digit
+	Port ( clk : in  STD_LOGIC;
+           reset : in  STD_LOGIC;
+           start : in  STD_LOGIC;
+			  new_char : in STD_LOGIC;
+           char_in : in  STD_LOGIC_VECTOR (3 downto 0);
+           error : out  STD_LOGIC;
+           done : out  STD_LOGIC;
+           output : out  STD_LOGIC_VECTOR (7 downto 0));
+	end component;
+	
+	signal lut_op : STD_LOGIC_VECTOR(3 downto 0) := "0000";
 	signal parallelDataOut : STD_LOGIC_VECTOR(7 downto 0) := (others=>'U');
 	signal dataValid : STD_LOGIC := 'U';
 	signal parallelDataIn : STD_LOGIC_VECTOR(7 downto 0) := (others=>'U');
@@ -68,6 +84,8 @@ architecture structural of lab2_design_top is
 	signal character_to_send : STD_LOGIC_VECTOR(7 downto 0) := (others=>'U');
 	signal DIP_debounced : STD_LOGIC_VECTOR(3 downto 0) := (others=>'0');
 	signal gnd : STD_LOGIC := '0';
+	signal lut_new_char: STD_LOGIC := '0';
+	signal lut_start: STD_LOGIC := '0';
 	
 	begin
 		make_UART: UART
@@ -90,8 +108,11 @@ architecture structural of lab2_design_top is
 						charFromUART => parallelDataOut,
 						LED_hi => LED_hi_pin,
 						LED_lo => LED_lo_pin,
-						send_character => send_character,
-						character_to_send => character_to_send
+						--send_character => send_character,
+						--character_to_send => character_to_send,
+						lut_op => lut_op,
+						lut_new_char => lut_new_char,
+						lut_start => lut_start
 			);
 			
 		encoder: character_encoder
@@ -112,5 +133,18 @@ architecture structural of lab2_design_top is
 							signal_out => DIP_debounced(i)
 				);
 		end generate DIP_debouncers;
+		
+		ALU: ALU_single_digit
+		 port map (
+			  clk => clock_pin,
+           reset => reset_pin,
+           start => lut_start,
+			  new_char => lut_new_char,
+           char_in => lut_op,
+           error => Error_pin,
+           done => send_character,
+           output => character_to_send
+			  );
+
 
 end structural;

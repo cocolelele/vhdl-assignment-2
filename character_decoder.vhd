@@ -10,7 +10,10 @@ entity character_decoder is
 			LED_hi : out STD_LOGIC;
 			LED_lo : out STD_LOGIC;
 			send_character : out STD_LOGIC;
-			character_to_send : out STD_LOGIC_VECTOR (7 downto 0)
+			character_to_send : out STD_LOGIC_VECTOR (7 downto 0);
+			lut_op : out STD_LOGIC_VECTOR(3 downto 0);
+			lut_new_char: out STD_LOGIC;
+			lut_start: out STD_LOGIC
 	);
 end entity character_decoder;
 
@@ -30,6 +33,9 @@ begin
 			send_character_i <= '0';
 			character_to_send <= (others=>'0');
 			start_timer <= '0';
+			lut_new_char <= '0';
+			lut_start <= '0';
+
 
 			data_good: if (charFromUART_valid = '1') then
 				whatKind: if ((charFromUART >= X"61") and (charFromUART <= X"7A")) then
@@ -46,15 +52,23 @@ begin
 					new_ASCII_value := ASCII_value + 32;
 					character_to_send <= std_logic_vector(to_unsigned(new_ASCII_value,8));
 				
-				elsif ((charFromUART >= X"30") and (charFromUART <= X"39")) then
+				elsif ((charFromUART >= X"2A") and (charFromUART <= X"39")) then
 					LED_lo_req <= '0';
 					LED_hi_req <= '1';
+					ASCII_value := to_integer(unsigned(charFromUART));
+					new_ASCII_value := ASCII_value - 42;
+					lut_op <= std_logic_vector(to_unsigned(new_ASCII_value, 4));
 					character_to_send <= charFromUART;
-				
+					lut_new_char <= '1';
+					
+				elsif (charFromUART = x"0D") then
+					lut_start <= '1';
+					
 				else
 					LED_lo_req <= '1';
 					LED_hi_req <= '1';
 					character_to_send <= charFromUART;
+					
 				end if whatKind;
 				
 				start_timer <= '1';

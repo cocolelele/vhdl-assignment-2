@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "/home/ise/VHDL/vhdl-assignment-2/UART_receiver.xst" -ofn "/home/ise/VHDL/vhdl-assignment-2/UART_receiver.syr" 

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/ise/VHDL/vhdl-assignment-2/lab2_test_bench_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="lab2_test_bench" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="8" />
+   <wvobject fp_name="/lab2_test_bench/clock_pin" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clock_pin</obj_property>
+      <obj_property name="ObjectShortName">clock_pin</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_test_bench/baud_state" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">baud_state</obj_property>
+      <obj_property name="ObjectShortName">baud_state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_test_bench/serialdatain_pin" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">serialdatain_pin</obj_property>
+      <obj_property name="ObjectShortName">serialdatain_pin</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_test_bench/serialdataout_pin" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">serialdataout_pin</obj_property>
+      <obj_property name="ObjectShortName">serialdataout_pin</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_test_bench/uut/make_UART/rcvr/paralleldataout" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">paralleldataout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">paralleldataout[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_test_bench/uut/make_UART/rcvr/rxstate" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">rxstate</obj_property>
+      <obj_property name="ObjectShortName">rxstate</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_test_bench/uut/make_UART/xmit/paralleldatain" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">paralleldatain[7:0]</obj_property>
+      <obj_property name="ObjectShortName">paralleldatain[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_test_bench/uut/make_UART/xmit/txstate" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">txstate</obj_property>
+      <obj_property name="ObjectShortName">txstate</obj_property>
+   </wvobject>
+</wave_config>

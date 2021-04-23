@@ -5,6 +5,12 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ise/VHDL/vhdl-assignment-2/lab_design_top.vhd</arg>&quot; line <arg fmt="%s" index="2">104</arg>: Output port &lt;<arg fmt="%s" index="3">character_to_send</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">decoder</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ise/VHDL/vhdl-assignment-2/lab_design_top.vhd</arg>&quot; line <arg fmt="%s" index="2">104</arg>: Output port &lt;<arg fmt="%s" index="3">send_character</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">decoder</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
 <msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">reset</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
@@ -12,9 +18,6 @@
 </msg>
 
 <msg type="info" file="Xst" num="1767" delta="new" >HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
-</msg>
-
-<msg type="warning" file="Xst" num="0" delta="new" >The specified part-type was not generated at build time. XST is loading the full part-type and will therefore consume more CPU and memory.
 </msg>
 
 <msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">countValue_4</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">rcvr</arg>&gt;. This FF/Latch will be trimmed during the optimization process.

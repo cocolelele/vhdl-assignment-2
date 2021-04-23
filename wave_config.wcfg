@@ -3,7 +3,7 @@
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="/config/VHDL/vhdl-assignment-2/lab2_test_bench_isim_beh.wdb" id="1" type="auto">
+      <db_ref path="/home/ise/VHDL/vhdl-assignment-2/lab2_test_bench_isim_beh.wdb" id="1" type="auto">
          <top_modules>
             <top_module name="lab2_test_bench" />
             <top_module name="numeric_std" />
@@ -11,7 +11,7 @@
          </top_modules>
       </db_ref>
    </db_ref_list>
-   <WVObjectSize size="10" />
+   <WVObjectSize size="11" />
    <wvobject fp_name="/lab2_test_bench/clock_pin" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">clock_pin</obj_property>
       <obj_property name="ObjectShortName">clock_pin</obj_property>
@@ -53,5 +53,10 @@
    <wvobject fp_name="/lab2_test_bench/uut/paralleldataout" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">paralleldataout[7:0]</obj_property>
       <obj_property name="ObjectShortName">paralleldataout[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_test_bench/uut/decoder/lut_op" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">lut_op[3:0]</obj_property>
+      <obj_property name="ObjectShortName">lut_op[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
 </wave_config>

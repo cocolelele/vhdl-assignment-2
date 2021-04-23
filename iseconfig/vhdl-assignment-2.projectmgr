@@ -7,16 +7,22 @@
    <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/ALU_top - Behavioral |home|ise|VHDL|vhdl-assignment-2|ALU_top.vhd/adder - Adder16 - structure</ClosedNode>
+         <ClosedNode>/ALU_top - Behavioral |home|ise|VHDL|vhdl-assignment-2|ALU_top.vhd/multiplier - Mult16 - architechture</ClosedNode>
+         <ClosedNode>/Mult16 - architechture |home|ise|VHDL|vhdl-assignment-2|Mult16.vhd</ClosedNode>
+         <ClosedNode>/lab2_design_top - structural |home|ise|VHDL|vhdl-assignment-2|lab_design_top.vhd/ALU - ALU_top - Behavioral/adder - Adder16 - structure</ClosedNode>
+         <ClosedNode>/lab2_design_top - structural |home|ise|VHDL|vhdl-assignment-2|lab_design_top.vhd/ALU - ALU_top - Behavioral/multiplier - Mult16 - architechture</ClosedNode>
+         <ClosedNode>/lab2_design_top - structural |home|ise|VHDL|vhdl-assignment-2|lab_design_top.vhd/make_UART - UART - Behavioral</ClosedNode>
          <ClosedNode>/lab_design_top |home|ise|VHDL|vhdl-assignment-2|lab_design_top.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>lab2_design_top - structural (/config/VHDL/vhdl-assignment-2/lab_design_top.vhd)</SelectedItem>
+         <SelectedItem>lab2_design_top - structural (/home/ise/VHDL/vhdl-assignment-2/lab_design_top.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000287000000020000000000000000000000000200000064ffffffff000000810000000300000002000002870000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000205000000020000000000000000000000000200000064ffffffff000000810000000300000002000002050000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>lab2_design_top - structural (/config/VHDL/vhdl-assignment-2/lab_design_top.vhd)</CurrentItem>
+      <CurrentItem>lab2_design_top - structural (/home/ise/VHDL/vhdl-assignment-2/lab_design_top.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -39,9 +45,9 @@
       <SelectedItems/>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000534000000040101000100000000000000000000000064ffffffff000000810000000000000004000000510000000100000000000000290000000100000000000000840000000100000000000004360000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000004df000000040101000100000000000000000000000064ffffffff000000810000000000000004000000510000000100000000000000290000000100000000000000840000000100000000000003e10000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>Adder8.vhd</CurrentItem>
    </ItemView>
    <ItemView guiview="Library" >
       <ClosedNodes>
@@ -51,7 +57,7 @@
       <SelectedItems/>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000125000000010001000100000000000000000000000064ffffffff000000810000000000000001000001250000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000128000000010001000100000000000000000000000064ffffffff000000810000000000000001000001280000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>work</CurrentItem>
    </ItemView>
@@ -59,33 +65,55 @@
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
          <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Design Utilities</ClosedNode>
          <ClosedNode>Implement Design</ClosedNode>
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>View Technology Schematic</SelectedItem>
+         <SelectedItem>View RTL Schematic</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000013d000000010000000100000000000000000000000064ffffffff0000008100000000000000010000013d0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f4000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f40000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>View Technology Schematic</CurrentItem>
+      <CurrentItem>View RTL Schematic</CurrentItem>
    </ItemView>
    <SourceProcessView>000000ff00000000000000020000014c0000011d01000000060100000002</SourceProcessView>
    <CurrentView>Implementation</CurrentView>
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/ALU_top - Behavioral |home|ise|VHDL|vhdl-assignment-2|ALU_top.vhd</ClosedNode>
+         <ClosedNode>/ALU_top - Behavioral |home|ise|VHDL|vhdl-assignment-2|ALU_top.vhd/adder - Adder16 - structure</ClosedNode>
+         <ClosedNode>/ALU_top - Behavioral |home|ise|VHDL|vhdl-assignment-2|ALU_top.vhd/multiplier - Mult16 - architechture</ClosedNode>
+         <ClosedNode>/ALU_top - Behavioral |home|ise|VHDL|vhdl-assignment-2|ALU_top.vhd/multiplier - Mult16 - architechture/A16_1 - Adder16 - structure</ClosedNode>
+         <ClosedNode>/ALU_top - Behavioral |home|ise|VHDL|vhdl-assignment-2|ALU_top.vhd/multiplier - Mult16 - architechture/A16_2 - Adder16 - structure</ClosedNode>
+         <ClosedNode>/ALU_top - Behavioral |home|ise|VHDL|vhdl-assignment-2|ALU_top.vhd/multiplier - Mult16 - architechture/A16_3 - Adder16 - structure</ClosedNode>
+         <ClosedNode>/ALU_top - Behavioral |home|ise|VHDL|vhdl-assignment-2|ALU_top.vhd/multiplier - Mult16 - architechture/M8_1 - Mult8 - Structure</ClosedNode>
+         <ClosedNode>/ALU_top - Behavioral |home|ise|VHDL|vhdl-assignment-2|ALU_top.vhd/multiplier - Mult16 - architechture/M8_2 - Mult8 - Structure</ClosedNode>
+         <ClosedNode>/ALU_top - Behavioral |home|ise|VHDL|vhdl-assignment-2|ALU_top.vhd/multiplier - Mult16 - architechture/M8_3 - Mult8 - Structure</ClosedNode>
+         <ClosedNode>/ALU_top - Behavioral |home|ise|VHDL|vhdl-assignment-2|ALU_top.vhd/multiplier - Mult16 - architechture/M8_4 - Mult8 - Structure</ClosedNode>
+         <ClosedNode>/Mult16 - architechture |home|ise|VHDL|vhdl-assignment-2|Mult16.vhd/A16_1 - Adder16 - structure</ClosedNode>
+         <ClosedNode>/Mult16 - architechture |home|ise|VHDL|vhdl-assignment-2|Mult16.vhd/A16_2 - Adder16 - structure</ClosedNode>
+         <ClosedNode>/Mult16 - architechture |home|ise|VHDL|vhdl-assignment-2|Mult16.vhd/A16_3 - Adder16 - structure</ClosedNode>
+         <ClosedNode>/Mult16 - architechture |home|ise|VHDL|vhdl-assignment-2|Mult16.vhd/M8_1 - Mult8 - Structure</ClosedNode>
+         <ClosedNode>/Mult16 - architechture |home|ise|VHDL|vhdl-assignment-2|Mult16.vhd/M8_2 - Mult8 - Structure</ClosedNode>
+         <ClosedNode>/Mult16 - architechture |home|ise|VHDL|vhdl-assignment-2|Mult16.vhd/M8_3 - Mult8 - Structure</ClosedNode>
+         <ClosedNode>/Mult16 - architechture |home|ise|VHDL|vhdl-assignment-2|Mult16.vhd/M8_4 - Mult8 - Structure</ClosedNode>
+         <ClosedNode>/Test_ALU - behavior |home|ise|VHDL|vhdl-assignment-2|Test_ALU.vhd</ClosedNode>
          <ClosedNode>/lab2_test_bench - behavior |config|VHDL|vhdl-assignment-2|lab2_test_bench.vhd/uut - lab2_design_top - structural/make_UART - UART - Behavioral</ClosedNode>
+         <ClosedNode>/lab2_test_bench - behavior |home|ise|VHDL|vhdl-assignment-2|lab2_test_bench.vhd</ClosedNode>
+         <ClosedNode>/lab2_test_bench - behavior |home|ise|VHDL|vhdl-assignment-2|lab2_test_bench.vhd/uut - lab2_design_top - structural/ALU - ALU_top - Behavioral</ClosedNode>
+         <ClosedNode>/lab2_test_bench - behavior |home|ise|VHDL|vhdl-assignment-2|lab2_test_bench.vhd/uut - lab2_design_top - structural/make_UART - UART - Behavioral</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>lab2_test_bench - behavior (/config/VHDL/vhdl-assignment-2/lab2_test_bench.vhd)</SelectedItem>
+         <SelectedItem>test_alu_single_digit - behavior (/home/ise/VHDL/vhdl-assignment-2/test_alu_single_digit.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000219000000020000000000000000000000000200000064ffffffff000000810000000300000002000002190000000100000003000000000000000100000003</ViewHeaderState>
-      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>lab2_test_bench - behavior (/config/VHDL/vhdl-assignment-2/lab2_test_bench.vhd)</CurrentItem>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001cd000000020000000000000000000000000200000064ffffffff000000810000000300000002000001cd0000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>test_alu_single_digit - behavior (/home/ise/VHDL/vhdl-assignment-2/test_alu_single_digit.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -97,7 +125,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000013d000000010000000100000000000000000000000064ffffffff0000008100000000000000010000013d0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f4000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f40000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
    </ItemView>
@@ -110,7 +138,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000013d000000010000000100000000000000000000000064ffffffff0000008100000000000000010000013d0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f4000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f40000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>Simulate Behavioral Model</CurrentItem>
    </ItemView>
